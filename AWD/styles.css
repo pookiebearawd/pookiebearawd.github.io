@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #0C2340; /* Dark blue background */
+    
+}
+header{
+    background-color: #0C2340; /* Dark blue background */
+}
+.redeem-box {
+    width: 50%;
+    max-width: 600px;
+}
+.badge-notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+}
+
+
+.button-prs{
+    background-color: #1970ff; /* Dark blue background */
+    color: white;
+    border: none;
+    padding: 5 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.foot{
+    background: rgb(87,151,139);
+background: linear-gradient(165deg, rgba(87,151,139,1) 0%, rgba(53,89,117,1) 100%);
+color: white;
+
+}
