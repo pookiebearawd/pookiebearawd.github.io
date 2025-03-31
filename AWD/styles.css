@@ -12,7 +12,7 @@ header{
 .badge-notification {
     position: absolute;
     top: -5px;
-    right: -5px;
+    right: -9px;
     font-size: 12px;
 }
 
@@ -37,3 +37,87 @@ background: linear-gradient(165deg, rgba(87,151,139,1) 0%, rgba(53,89,117,1) 100
 color: white;
 
 }
+
+.dropdown-toggle{
+    
+background-color: transparent;
+color: white;
+border: white 2px solid;
+}
+
+
+.nescafe{
+    background-image: url(assets/whosthatpokemon_1349921665_7.jpg);
+}
+
+
+
+
+
+.dropdown-toggle:hover{
+    background-color: white;
+    color: black;
+    border: white 2px solid;
+}
+
+.indent{
+    background: rgb(39,85,142);
+    background: linear-gradient(90deg, rgba(39,85,142,1) 0%, rgba(106,182,196,1) 55%);;
+}
+
+
+.promo-banner {
+    background-color: #fff;
+    padding: 20px;
+}
+.promo-image {
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+.promo-text {
+    text-align: left;
+}
+.promo-text h1 {
+    font-weight: bold;
+}
+.promo-text .btn {
+    background-color: black;
+    color: white;
+}
+
+.subs{
+    background: rgb(39,85,142);
+    background: linear-gradient(90deg, rgba(39,85,142,1) 38%, rgba(106,182,196,1) 100%);
+}
+
+
+
+.table-image {
+  
+    thead {
+      td, th {
+        border: 0;
+        color: #666;
+        font-size: 0.8rem;
+      }
+    }
+    
+    td, th {
+      vertical-align: middle;
+      text-align: center;
+      
+      &.qty {
+        max-width: 2rem;
+      }
+    }
+  }
+  
+  .price {
+    margin-left: 1rem;
+  }
+  
+  .modal-footer {
+    padding-top: 0rem;
+  }
