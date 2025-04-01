@@ -12,26 +12,26 @@
 
     <!-- Headers -->
     <header>
-        <nav class="navbar navbar-expand-lg container pb-5">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
-                <a href="#" class="navbar-brand text-white">
-                    <img src="assets/Pokémon_GO_logo.svg" alt="Pokémon GO" height="70">
-                </a>
-                <div class="search-container col-5 d-flex w-50 bg-white rounded-pill p-1 ">
-                    <button class="btn button-prs rounded-pill w-30 flex-shrink-0">Redeem Code</button>
-                    <input type="text" class="form-control border-0 me-3 rounded-pill" placeholder="Enter Code">
-                    
-                </div>
-                <button class="btn btn-warning ms-3">Shop Now</button></div>
-                <div class="d-flex align-items-center ">
-                    <a href="#" class="text-white me-3 d-flex"><i class="fas fa-user pt-1 pe-2"></i> Account</a>
-                    <a href="#" class="text-white d-flex position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
-                        <i class="fas fa-shopping-bag pt-1 pe-2"></i> Shopping
-                        <span class="badge bg-danger rounded-circle badge-notification ">1</span>
-                    </a>
-                </div>
+      <nav class="navbar navbar-expand-lg container pb-5">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand text-white">
+                <img src="assets/Pokémon_GO_logo.svg" alt="Pokémon GO" height="70">
+            </a>
+            <div class="search-container col-5 d-flex w-50 bg-white rounded-pill p-1 ">
+                <button class="btn button-prs rounded-pill w-30 flex-shrink-0">Redeem Code</button>
+                <input type="text" class="form-control border-0 me-3 rounded-pill" placeholder="Enter Code">
+                
             </div>
-        </nav>
+            <button class="btn btn-warning ms-3" href="cartpage.html">Shop Now</button></div>
+            <div class="d-flex align-items-center ">
+                <a href="#" class="text-white me-3 d-flex"><i class="fas fa-user pt-1 pe-2"></i> Account</a>
+                <a href="#" class="text-white d-flex position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <i class="fas fa-shopping-bag pt-1 pe-2"></i> Shopping
+                    <span class="badge bg-danger rounded-circle badge-notification ">1</span>
+                </a>
+            </div>
+        </div>
+    </nav>
 
 <!-- Modal -->
 <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
@@ -76,7 +76,7 @@
       </div>
       <div class="modal-footer border-top-0 d-flex justify-content-between">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Checkout</button>
+        <a class="btn btn-success " href="cartpage.html">View Cart</a>
       </div>
     </div>
   </div>
@@ -105,13 +105,7 @@
             </div>
             <div class="col-lg-5 vid p-0">
               <div class="ratio ratio-16x9"> <!-- Bootstrap utility for responsive video -->
-                <video src="/assets/Welcome to Pokémon GO Might and Mastery! - Pokémon GO (360p, h264, youtube, aPDy0OBnduY).mp4" 
-                       class="object-fit-none" 
-                       autoplay 
-                       muted 
-                       loop 
-                       playsinline>
-                </video>
+              <img src="assets/main.gif" alt="yup" class="img-fluid rounded-3 mainpic">
               </div>
             </div>
       </div>
@@ -127,14 +121,14 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <img src="assets/apppp.jpg" class="d-block mx-lg-auto img-fluid" alt="Pokemon Store" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to the Pokémon GO Webstore!</h1>
+        <p class="lead">Discover exclusive Pokémon merchandise, in-game items, and more! Gear up for your Pokémon journey with our premium collection and special offers.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          
+          <a href="shop.html" class="btn btn-danger btn-lg px-4 me-md-2">Shop Now</a>
+            <a href="shop.html#offers-section" class="btn btn-outline-warning btn-lg px-4">View Offers</a>
         </div>
       </div>
     </div>
@@ -143,7 +137,7 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <img src="assets/app.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bolder text-body-emphasis lh-1 mb-3">DOWNLOAD APP & </h1>
@@ -166,7 +160,7 @@
 
     <!-- Main Content -->
 
-<div class="container">
+<div class="container my-5"></div>
 <div class=" m-5 p-5 bg-danger justify-content-between subs rounded-3 d-flex">
   <div class="row ms-5 justify-content-between col12"><img class="logo-poke" src="/assets/Pokémon_GO_logo.svg" alt=""></div>
   
@@ -247,11 +241,19 @@
             </div>
       
             <div class="col-md-5 offset-md-1 mb-3">
-                <ul class="list-unstyled d-flex justify-content-end">
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-
-                </ul>
+              <ul class="list-unstyled d-flex justify-content-end">
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="https://www.nianticlabs.com/" target="_blank">
+                        <img src="assets/Niantic.png" alt="Niantic Logo" width="50" height="50" ;>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="https://www.pokemon.com/" target="_blank">
+                        <img src="assets/Pokemon.png" alt="Pokemon Company Logo" width="100";">
+                    </a>
+                </li>
+                </li>
+            </ul>
                
             </div>
 
@@ -300,7 +302,13 @@
             </ul>
            
           </div>
-       
+          <div class="text-center">
+            <p class="text-white">© 2023 PookieBear. All rights reserved.</p>
+            <p class="text-white">Pokémon and Pokémon GO are trademarks of Nintendo, The Pokémon Company, and Niantic, Inc.</p>
+            <p class="text-white">This website is not affiliated with or endorsed by Pokémon Company, Niantic, or Nintendo.</p>
+       <p>All assets and information herewith are owned by Pokemon Company, Niantic, & Nintendo. Copyrights belongs to them. This is for academic purposes only.
+       </p>
+      </div>
       </div>    
      </footer>
      <script src="scripts.js"></script>

@@ -69,12 +69,8 @@ border: white 2px solid;
     background: linear-gradient(90deg, rgba(39,85,142,1) 0%, rgba(106,182,196,1) 55%);;
 }
 
-video {
-    width: 100%;
-    height: 100%;
-    min-height: 200px;
-    object-fit: cover;
-    object-position: center;
+.mainpic {
+    
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -85,7 +81,7 @@ video {
     z-index: 1;
     overflow: hidden;
 }
-.video-container {
+.mainpic {
     position: absolute;
     width: 50rem;
     height: 100%;
@@ -147,3 +143,41 @@ video {
   .modal-footer {
     padding-top: 0rem;
   }
+
+  /* cart styles */
+.table-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .quantity-control {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    align-items: center;
+  }
+  
+  .btn-qty {
+    border: none;
+    background: transparent;
+    padding: 0;
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    color: #495057;
+  }
+  
+  .quantity-control input {
+    text-align: center;
+    height: 30px;
+    margin: 2px 0;
+  }
+
+.newsletter{
+    background: rgb(39,85,142);
+    background: linear-gradient(90deg, rgba(39,85,142,1) 0%, rgba(106,182,196,1) 100%);
+}
+
