@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonGo</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Headers -->
+    <header>
+      <nav class="navbar navbar-expand-lg container pb-5">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand text-white">
+                <img src="assets/Pokémon_GO_logo.svg" alt="Pokémon GO" height="70">
+            </a>
+            <div class="search-container col-5 d-flex w-50 bg-white rounded-pill p-1">
+                <button class="btn button-prs rounded-pill w-30 flex-shrink-0">Redeem Code</button>
+                <input type="text" class="form-control border-0 me-3 rounded-pill" placeholder="Enter Code">
+            </div>
+            <a class="btn btn-warning ms-3" href="shop.html">Shop Now</a>
+            <div class="d-flex align-items-center">
+                <button id="accountBtn" class="btn btn-outline-light me-3 d-flex align-items-center">
+                    <i class="fas fa-user pt-1 pe-2"></i> Account
+                </button>
+                <a href="#" class="text-white d-flex position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <i class="fas fa-shopping-bag pt-1 pe-2"></i> Shopping
+                    <span class="badge bg-danger rounded-circle badge-notification">1</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="assets/images.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Snorlax</td>
+              <td>$40</td>
+              <td class="qty "><input type="text" class="form-control" id="input1" value="2"></td>
+              <td>$178</td>
+              <td>
+                <button class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Total: <span class="price text-success">$80</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a class="btn btn-success " href="cartpage.html">View Cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </header>
+    <!-- Headers -->
+
+
+
+    <!-- Main Content -->
+     
+     <div class=" py-5 my-3 nescafe">
+       <div class="container  ">
+         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+           <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 text-white">
+             
+             <h1 class="display-4 fw-bold lh-1 text-white">Catch Pokémon</h1>
+             <h1 class="display-5 fw-light lh-1 text-white">Find your buddy!</h1>
+             <p class="lead">Embark on the path of Might and Mastery<br> with a legendary Pokémon at your side!</p>
+             <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+               <a class="btn btn-danger px-4 me-md-2 fw-semibold" href="shop.html">Shop Now</a>
+               
+              </div>
+            </div>
+            <div class="col-lg-5 vid p-0">
+              <div class="ratio ratio-16x9"> <!-- Bootstrap utility for responsive video -->
+              <img src="assets/main.gif" alt="yup" class="img-fluid rounded-3 mainpic">
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-3 my-3 bg-danger indent justify-content-center">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="d-flex"><img src="assets/PookieBear.png" alt="PookieBear" height="70" class="mb-3">
+      <h1 class="mt-2 text-white">PookieBear</h1></div></div>
+  </div>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="assets/apppp.jpg" class="d-block mx-lg-auto img-fluid" alt="Pokemon Store" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Welcome to the Pokémon GO Webstore!</h1>
+        <p class="lead">Discover exclusive Pokémon merchandise, in-game items, and more! Gear up for your Pokémon journey with our premium collection and special offers.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="shop.html" class="btn btn-danger btn-lg px-4 me-md-2">Shop Now</a>
+            <a href="shop.html#offers-section" class="btn btn-outline-warning btn-lg px-4">View Offers</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="assets/app.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bolder text-body-emphasis lh-1 mb-3">DOWNLOAD APP & </h1>
+        <h1 class="display-5 fw-bolder text-body-emphasis lh-1 mb-3">GET THE VOUCHER! </h1>
+
+        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a class=" me-md-2"><img src="/assets/Component 2.svg" alt=""></a>
+          <a class=" "><img src="/assets/Store download button.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <!-- Main Content -->
+
+<div class="container my-5"></div>
+<div class=" m-5 p-5 bg-danger justify-content-between subs rounded-3 d-flex">
+  <div class="row ms-5 justify-content-between col12"><img class="logo-poke" src="/assets/Pokémon_GO_logo.svg" alt=""></div>
+  
+  <div class="row align-items-start justify-content-center">
+    <div class="col-12 col-md-6 text-start">
+      <h1 class="display-5 fw-bold text-white">Join the Adventure!</h1>
+      <p class="lead text-white">Be part of the Pokémon GO community and catch them all!</p>
+    </div>
+
+  </div>
+  <div class="row align-items-center justify-content-center">
+    <div class="col-12 col-md-6 text-center">
+      <h5 class="display-6 fw-semibold text-white">Subscribe to our Newsletter</h5>
+      <p class="lead text-white">Stay updated with the latest news and offers!</p>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control me-2" placeholder="Enter your email" aria-label="Email">
+        <button class="btn btn-light" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Footer -->
+     <footer class="foot">
+    <div class="container">
+        <footer class="py-5 pe-lg-0 pt-lg-5">
+          <div class="d-flex">
+          <div class="d-flex"><img src="assets/PookieBear.png" alt="PookieBear" height="70" class="mb-3">
+          <h1 class="mt-2">PookieBear</h1></div></div>
+          
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pokemon GO Live</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Leaderboard</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Events</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">News</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Support</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Code Redemption</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Community Day Map</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+             
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <ul class="list-unstyled d-flex justify-content-end">
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="https://www.nianticlabs.com/" target="_blank">
+                        <img src="assets/Niantic.png" alt="Niantic Logo" width="50" height="50" ;>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="link-body-emphasis" href="https://www.pokemon.com/" target="_blank">
+                        <img src="assets/Pokemon.png" alt="Pokemon Company Logo" width="100";">
+                    </a>
+                </li>
+                </li>
+            </ul>
+               
+            </div>
+
+            
+          </div>
+        <div class=" d-flex flex-column flex-sm-row justify-content-between py-4 my-4" >
+
+
+
+
+            <ul class="list-unstyled d-flex top-50">
+              <li class="ms-3 mt-2"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                style="fill:#FFFFFF;">
+                <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                </svg></a></li>
+              <li class="ms-3  mt-2"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+                style="fill:#FFFFFF;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                </svg></a></li>
+              <li class="ms-3  mt-2"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+                style="fill:#FFFFFF;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
+                </svg></use></svg></a></li>
+            </ul>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                <li><a class="dropdown-item" href="#">Japanese</a></li>
+                <li><a class="dropdown-item" href="#">Korean</a></li>
+              </ul>
+            </div>
+
+
+        </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top border-bottom">
+            <ul class="nav d-flex justify-content-center gap-5 ">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Terms of Service</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Copyright Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Player Guidelines</a></li>
+
+            </ul>
+           
+          </div>
+          <div class="text-center">
+            <p class="text-white">© 2023 PookieBear. All rights reserved.</p>
+            <p class="text-white">Pokémon and Pokémon GO are trademarks of Nintendo, The Pokémon Company, and Niantic, Inc.</p>
+            <p class="text-white">This website is not affiliated with or endorsed by Pokémon Company, Niantic, or Nintendo.</p>
+       <p>All assets and information herewith are owned by Pokemon Company, Niantic, & Nintendo. Copyrights belongs to them. This is for academic purposes only.
+       </p>
+      </div>
+      </div>    
+     </footer>
+     <script src="scripts.js"></script>
+     <script>
+      document.getElementById("accountBtn").addEventListener("click", function() {
+          const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+          window.location.href = isLoggedIn ? "profile.html" : "signin.html";
+      });
+  </script>
+    <script src="bootstrap-5.3.3-dist\js\bootstrap.bundle.js"></script>
+</body>
+</html>
