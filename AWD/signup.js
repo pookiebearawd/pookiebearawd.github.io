@@ -208,11 +208,22 @@ confirmPasswordInput.addEventListener("input", checkFormValidity);
 // Handle form submission: save user credentials and redirect to sign in page
 document.getElementById("signupForm").addEventListener("submit", function (e) {
     e.preventDefault();
+    
+    // Create a constant UserProfile containing email, in-game name, and player ID.
+    const UserProfile = {
+        email: emailInput.value.trim(),
+        ingameName: ignInput.value.trim(),
+        id: document.getElementById("playerID").value,
+    };
+
     // Store user credentials (for demo purposes, credentials are stored in localStorage)
     const userData = {
         email: emailInput.value.trim(),
         password: passwordInput.value,
     };
+
+    // For demonstration, store both objects in localStorage
+    localStorage.setItem("userProfile", JSON.stringify(UserProfile));
     localStorage.setItem("user", JSON.stringify(userData));
     
     // Redirect the user to the Sign In page
