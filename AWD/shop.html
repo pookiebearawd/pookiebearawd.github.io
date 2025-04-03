@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonGo</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Headers -->
+    <header>
+        <nav class="navbar navbar-expand-lg container pb-5">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a href="index.html" class="navbar-brand text-white">
+                    <img src="assets/Pokémon_GO_logo.svg" alt="Pokémon GO" height="70">
+                </a>
+                <div class="search-container col-5 d-flex w-50 bg-white rounded-pill p-1 ">
+                    <button class="btn button-prs rounded-pill w-30 flex-shrink-0">Redeem Code</button>
+                    <input type="text" class="form-control border-0 me-3 rounded-pill" placeholder="Enter Code">
+                    
+                </div>
+                <button class="btn btn-warning ms-3" href="shop.html">Shop Now</button></div>
+                <div class="d-flex align-items-center ">
+                    <a href="#" class="text-white me-3 d-flex"><i class="fas fa-user pt-1 pe-2"></i> Account</a>
+                    <a href="#" class="text-white d-flex position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-bag pt-1 pe-2"></i> Shopping
+                        <span class="badge bg-danger rounded-circle badge-notification ">1</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="assets/images.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Snorlax</td>
+              <td>$40</td>
+              <td class="qty "><input type="text" class="form-control" id="input1" value="2"></td>
+              <td>$178</td>
+              <td>
+                <button class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Total: <span class="price text-success">$80</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a class="btn btn-success " href="cartpage.html">View Cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </header>
+    <!-- Headers -->
+
+
+
+    <!-- Main Content -->
+    <main class="container py-5 ">
+        <!-- Hero Intro -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card newsletter text-white rounded-4 overflow-hidden">
+                    <img src="assets/Pokémon_GO_logo.svg" class="card-img opacity-50" alt="Pokemon GO Banner">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+                        <h1 class="card-title display-4 fw-bold">POKEMON GO SHOP</h1>
+                        <p class="card-text fs-5">Exclusive merchandise and in-game items for trainers</p>
+                        <div>
+                            <a class="btn btn-warning btn-lg px-4 me-2" href="#category-filters">Shop Now</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#offers-section">View Deals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Category  -->
+        <div class="row mb-4" id="category-filters">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <h2 class="mb-3 mb-md-0">Featured Products</h2>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <button class="btn btn-primary active">All</button>
+                        <button class="btn btn-outline-primary">In-Game Items</button>
+                        <button class="btn btn-outline-primary">Apparel</button>
+                        <button class="btn btn-outline-primary">Collectibles</button>
+                        <button class="btn btn-outline-primary">Accessories</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    
+        <!-- Prod Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="badge bg-danger position-absolute top-0 end-0 m-2">HOT</div>
+                    <img src="assets/pokecoins.png" class="card-img-top" alt="PokéCoins">
+                    <div class="card-body">
+                        <h5 class="card-title">PokéCoins Bundle</h5>
+                        <p class="card-text">2,500 PokéCoins for your in-game purchases. Power up your Pokémon GO experience!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$19.99</span>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="badge bg-success position-absolute top-0 end-0 m-2">NEW</div>
+                    <img src="assets/plush.jpg" class="card-img-top" alt="Pikachu Plush">
+                    <div class="card-body">
+                        <h5 class="card-title">Pikachu Plush Toy</h5>
+                        <p class="card-text">Adorable 12-inch Pikachu plush toy. Perfect for Pokémon trainers of all ages!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$24.99</span>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/hat.jpg" class="card-img-top" alt="Trainer Hat">
+                    <div class="card-body">
+                        <h5 class="card-title">Trainer Hat</h5>
+                        <p class="card-text">Stylish Pokémon GO trainer hat with embroidered logo. One size fits most.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$18.99</span>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 4 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="badge bg-primary position-absolute top-0 end-0 m-2">SALE</div>
+                    <img src="/assets/remote.jpeg" class="card-img-top" alt="Remote Raid Pass">
+                    <div class="card-body">
+                        <h5 class="card-title">Remote Raid Pass Bundle</h5>
+                        <p class="card-text">3 Remote Raid Passes to join raids from anywhere. Limited time offer!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="text-decoration-line-through text-muted me-2">$15.99</span>
+                                <span class="h5 mb-0">$12.99</span>
+                            </div>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- FeatCollection -->
+        <div class="row mb-4 " id="offers-section">
+            <div class="col-12">
+                <h2 class="mb-3">Limited Edition Collection</h2>
+                <hr>
+            </div>
+        </div>
+    
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="card bg-dark text-white h-100">
+                    <img src="/assets/gofest.png" class="card-img opacity-75" alt="GO Fest Collection">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h3 class="card-title">GO Fest 2025 Collection</h3>
+                        <p class="card-text">Exclusive merchandise celebrating this year's global event</p>
+                        <button class="btn btn-warning w-50">Shop Collection</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark text-white h-100">
+                    <img src="assets/teamgear.png" class="card-img opacity-75" alt="Team Collection">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                        <h3 class="card-title">Team Gear Collection</h3>
+                        <p class="card-text">Show your team pride with Mystic, Valor, and Instinct merchandise</p>
+                        <button class="btn btn-warning w-50">Shop Collection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Popular Items -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="mb-3">Best Sellers</h2>
+                <hr>
+            </div>
+        </div>
+    
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+            <!-- Product 5 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/snorlax.jpeg" class="card-img-top" alt="Snorlax Backpack">
+                    <div class="card-body">
+                        <h5 class="card-title">Snorlax Backpack</h5>
+                        <p class="card-text">Cute and functional Snorlax-themed backpack with multiple pockets.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$39.99</span>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 6 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/incense.png" class="card-img-top" alt="Incense Pack">
+                    <div class="card-body">
+                        <h5 class="card-title">Incense Pack</h5>
+                        <p class="card-text">8× Incense to attract more Pokémon to your location for 60 minutes each.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$6.99</span>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 7 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/evee.jpeg" class="card-img-top" alt="Eevee Evolution T-Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Eevee Evolution T-Shirt</h5>
+                        <p class="card-text">100% cotton t-shirt featuring all Eevee evolutions. Available in multiple sizes.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$22.99</span>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 8 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/pokeball.jpg" class="card-img-top" alt="Poké Ball Plus">
+                    <div class="card-body">
+                        <h5 class="card-title">Poké Ball Plus</h5>
+                        <p class="card-text">Interactive Poké Ball device that connects to Pokémon GO for enhanced gameplay.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5 mb-0">$49.99</span>
+                            <button class="btn btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Newslett -->
+        <div class="row ">
+            <div class="col-12">
+                <div class="card newsletter text-white p-4 rounded-4">
+                    <div class="card-body text-center">
+                        <h3 class="mb-3">Subscribe for Exclusive Deals</h3>
+                        <p class="mb-4">Be the first to know about new products, special offers, and upcoming events!</p>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email">
+                                    <button class="btn btn-warning" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- stopp Main Content -->
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- Main Content -->
+
+
+    <!-- Footer -->
+     <footer class="foot">
+    <div class="container">
+        <footer class="py-5 pe-lg-0 pt-lg-5">
+          <div class="d-flex">
+          <div class="d-flex"><img src="assets/PookieBear.png" alt="PookieBear" height="70" class="mb-3">
+          <h1 class="mt-2">PookieBear</h1></div></div>
+          
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pokemon GO Live</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Leaderboard</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Events</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">News</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Support</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Code Redemption</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Community Day Map</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+             
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+                <ul class="list-unstyled d-flex justify-content-end">
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="https://www.nianticlabs.com/" target="_blank">
+                            <img src="assets/Niantic.png" alt="Niantic Logo" width="50" height="50" ;>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="https://www.pokemon.com/" target="_blank">
+                            <img src="assets/Pokemon.png" alt="Pokemon Company Logo" width="100";">
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+               
+            </div>
+
+            
+          </div>
+        <div class=" d-flex flex-column flex-sm-row justify-content-between py-4 my-4" >
+
+
+
+
+            <ul class="list-unstyled d-flex top-50">
+              <li class="ms-3 mt-2"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                style="fill:#FFFFFF;">
+                <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                </svg></a></li>
+              <li class="ms-3  mt-2"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+                style="fill:#FFFFFF;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                </svg></a></li>
+              <li class="ms-3  mt-2"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+                style="fill:#FFFFFF;">
+                <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,3c-12.15,0 -22,9.85 -22,22c0,11.03 8.125,20.137 18.712,21.728v-15.897h-5.443v-5.783h5.443v-3.848c0,-6.371 3.104,-9.168 8.399,-9.168c2.536,0 3.877,0.188 4.512,0.274v5.048h-3.612c-2.248,0 -3.033,2.131 -3.033,4.533v3.161h6.588l-0.894,5.783h-5.694v15.944c10.738,-1.457 19.022,-10.638 19.022,-21.775c0,-12.15 -9.85,-22 -22,-22z"></path></g></g>
+                </svg></use></svg></a></li>
+            </ul>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                <li><a class="dropdown-item" href="#">Japanese</a></li>
+                <li><a class="dropdown-item" href="#">Korean</a></li>
+              </ul>
+            </div>
+
+
+        </div>
+          <div class="d-flex flex-column flex-sm-row justify-content-center py-4 my-4 border-top border-bottom">
+            <ul class="nav d-flex justify-content-center gap-5 ">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Terms of Service</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Copyright Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white fw-semibold">Player Guidelines</a></li>
+
+            </ul>
+           
+          </div>
+          <div class="text-center">
+            <p class="text-white">© 2023 PookieBear. All rights reserved.</p>
+            <p class="text-white">Pokémon and Pokémon GO are trademarks of Nintendo, The Pokémon Company, and Niantic, Inc.</p>
+            <p class="text-white">This website is not affiliated with or endorsed by Pokémon Company, Niantic, or Nintendo.</p>
+       <p>All assets and information herewith are owned by Pokemon Company, Niantic, & Nintendo. Copyrights belongs to them. This is for academic purposes only.
+       </p>
+      </div>
+      </div>    
+     </footer>
+     <script src="scripts.js"></script>
+    <script src="bootstrap-5.3.3-dist\js\bootstrap.bundle.js"></script>
+</body>
+</html>

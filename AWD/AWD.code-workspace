@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "AWD",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AWD"
+	}
+}
