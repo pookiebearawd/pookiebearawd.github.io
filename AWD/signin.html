@@ -22,27 +22,79 @@
   <body>
     
     <!-- Headers -->
-    <header>
+   <header>
       <nav class="navbar navbar-expand-lg container pb-5">
         <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a href="pookiebearawd.github.io/AWD/index.html" class="navbar-brand text-white">
+            <a href="index.html" class="navbar-brand text-white">
                 <img src="assets/Pokémon_GO_logo.svg" alt="Pokémon GO" height="70">
             </a>
-            <div class="search-container col-5 d-flex w-50 bg-white rounded-pill p-1 ">
+            <div class="search-container col-5 d-flex w-50 bg-white rounded-pill p-1">
                 <button class="btn button-prs rounded-pill w-30 flex-shrink-0">Redeem Code</button>
                 <input type="text" class="form-control border-0 me-3 rounded-pill" placeholder="Enter Code">
-                
             </div>
-            <a class="btn btn-warning ms-3" href="pookiebearawd.github.io/AWD/cartpage.html">Shop Now</a></div>
-            <div class="d-flex align-items-center ">
-                <a href="#" class="text-white me-3 d-flex"><i class="fas fa-user pt-1 pe-2"></i> Account</a>
+            <a class="btn btn-warning ms-3" href="shop.html">Shop Now</a>
+            <div class="d-flex align-items-center">
+                <button id="accountBtn" class="btn btn-outline-light me-3 d-flex align-items-center">
+                    <i class="fas fa-user pt-1 pe-2"></i> Account
+                </button>
                 <a href="#" class="text-white d-flex position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
                     <i class="fas fa-shopping-bag pt-1 pe-2"></i> Shopping
-                    <span class="badge bg-danger rounded-circle badge-notification ">1</span>
+                    <span class="badge bg-danger rounded-circle badge-notification">1</span>
                 </a>
             </div>
         </div>
     </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="assets/images.jpeg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Snorlax</td>
+              <td>$40</td>
+              <td class="qty "><input type="text" class="form-control" id="input1" value="2"></td>
+              <td>$178</td>
+              <td>
+                <button class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Total: <span class="price text-success">$80</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a class="btn btn-success " href="cartpage.html">View Cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     </header>
         <!-- Headers -->
         <main class="min-h-screen items-center flex flex-row">
